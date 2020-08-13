@@ -14,3 +14,5 @@ rhel_up_packages:
   - preupgrade-assistant-el6toel7
   - redhat-upgrade-tool
   - subscription-manager
+
+upgrade_iso_filepath: /tmp/rhel-server-7.6-x86_64-dvd.iso

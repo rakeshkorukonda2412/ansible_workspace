@@ -8,10 +8,6 @@
 #  command: "sudo mv /etc/yum.repos.d/*.repo /etc/yum.repos.d/backup_repo/"
 #  failed_when: no
 
-- name: copy local repo
-  copy:
-    src: rhel7_6.repo
-    dest: /etc/yum.repos.d/local.repo
 
 - name: run yum upgrade
-  command: 'yum upgrade -y'
+  command: "redhat-upgrade-tool --iso #{upgrade_iso_filepath}"

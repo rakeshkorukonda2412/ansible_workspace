@@ -1,0 +1,16 @@
+---
+- name: install supported packages for upgradation
+  package:
+    name: "{{ item }}"
+    state: installed
+  loop: "{{ rhel_up_packages }}"
+
+- name: scan system readiness using pre upgrade assistant
+  command: preupg -v --force
+  failed_when: false
+
+- name: get scan results
+  fetch:
+    src: /root/preupgrade/result.html
+    dest: "/var/www/html/{{inventory_hostname}}.html"
+    flat: yes

@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become_user: root
+  become: yes
+  roles:
+    - rhel_upgrade

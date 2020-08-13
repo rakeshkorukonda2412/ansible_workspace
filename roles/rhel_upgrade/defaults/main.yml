@@ -1,0 +1,16 @@
+---
+# backup files list
+backup_files:
+  - /etc/passwd
+  - /etc/shadow
+  - /etc/group
+  - /etc/services
+  - /etc/security/access.conf
+
+# packages for rhel_upgrade
+rhel_up_packages:
+  - preupgrade-assistant
+  - preupgrade-assistant-ui
+  - preupgrade-assistant-el6toel7
+  - redhat-upgrade-tool
+  - subscription-manager

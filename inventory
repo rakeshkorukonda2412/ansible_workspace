@@ -1,0 +1,12 @@
+[centos7]
+centosnode2
+
+[centos8]
+localhost
+
+[centos:children]
+centos7
+centos8
+
+[ubuntu]
+ubuntunode1

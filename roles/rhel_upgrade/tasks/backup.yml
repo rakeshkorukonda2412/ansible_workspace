@@ -1,0 +1,6 @@
+---
+- name: backup conf files
+  fetch:
+    src: "{{ item }}"
+    dest: "/tmp/"
+  loop: "{{ backup_files }}"

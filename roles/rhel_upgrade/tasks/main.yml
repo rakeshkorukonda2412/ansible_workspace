@@ -1,0 +1,4 @@
+---
+# tasks file for rhel_upgrade
+- include: ./backup.yml
+- include: ./pre_upgrade_rhel.yml

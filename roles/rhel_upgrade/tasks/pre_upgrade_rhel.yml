@@ -4,6 +4,14 @@
     path: /etc/yum.repos.d/backup_repo
     state: directory
     
-- name: move repo files to backup directory
-  command: "mv /etc/yum.repos.d*.repo /etc/yum.repos.d/backup_repo"
-  failed_when: no
+#- name: move repo files to backup directory
+#  command: "sudo mv /etc/yum.repos.d/*.repo /etc/yum.repos.d/backup_repo/"
+#  failed_when: no
+
+- name: copy local repo
+  copy:
+    src: rhel7_6.repo
+    dest: /etc/yum.repos.d/local.repo
+
+- name: run yum upgrade
+  command: 'yum upgrade -y'

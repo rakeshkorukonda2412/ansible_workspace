@@ -1,0 +1,7 @@
+[LocalRepo]
+mediaid=1539194970.388895
+name=Local Repository
+baseurl=file:///tmp/rhel_76
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled=1
+gpgcheck=1

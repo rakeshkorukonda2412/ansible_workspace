@@ -1,0 +1,13 @@
+{
+   "reporter":{
+      "automate" : {
+	"stdout" : false,
+	 "url" : "https://104.197.246.202/data-collector/v0/",
+	 "token" : "rMbB-sRIurc92PK4gnlNPfR_4ds=",
+	 "insecure" : true,
+	 "node_name" : "centos8-node1",
+	 "environment" : "prod",
+	 "node_uuid" : "6ec0db2f-11c0-43da-975e-2a8ad9ebae0b"
+      }	    
+ }
+}
